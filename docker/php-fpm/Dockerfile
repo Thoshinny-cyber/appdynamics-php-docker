@@ -63,6 +63,6 @@ ADD ./agent-install.sh /agent-install.sh
 RUN sh /agent-install.sh
 
 # copy logger config file (trace logs enabled)
-# COPY ./appdynamics_agent_log4cxx.xml ${PHP_AGENT_DIR}/appdynamics-php-agent-linux_x64/php/conf/appdynamics_agent_log4cxx.xml
+COPY ./appdynamics_agent_log4cxx.xml ${PHP_AGENT_DIR}/appdynamics-php-agent-linux_x64/php/conf/appdynamics_agent_log4cxx.xml
 
 CMD ["php-fpm"]
