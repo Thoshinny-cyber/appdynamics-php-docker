@@ -71,5 +71,5 @@ volumes:
   web-vol-1:
     driver_opts:
       type: none
-      device: ./app/
+      device: ${PWD}/app/
       o: bind
